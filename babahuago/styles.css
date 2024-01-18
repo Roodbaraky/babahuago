@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    position: relative;
+    z-index: 2;
 }
 
 header {
@@ -12,10 +12,6 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 1em 2em;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
 }
 
 .logo {
@@ -41,8 +37,6 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    position: relative;
-    z-index: 1;
 }
 
 iframe {
@@ -82,11 +76,21 @@ h1, h2, h3 {
 }
 
 canvas {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0;
-    pointer-events: none; /* Allow clicks to go through the canvas */
+    z-index: -1;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+    .logo {
+        text-align: center;
+    }
+
+    .logo img {
+        margin-right: 0; /* Adjust as needed */
+    }
 }
