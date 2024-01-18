@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
 const canvas = document.createElement('canvas');
 document.body.appendChild(canvas);
 
