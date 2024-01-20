@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Add your YouTube video IDs here
     const youtubeVideoIds = [
-       '9p0rIjIcOQ0',
+        'jPFavbGQnVY',
+        '9p0rIjIcOQ0',
         '-nsTmSQMys4',
         'LJdkf4Ea-7A',
         'LZsH_0hHREw',
